@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Firebase_version9_RealtimeDB(G'sACADEMY初学者用サンプル)</title>
+</head>
+
+<body>
+    <!-- Loginボタン -->
+    <div class="flex justify-center items-center w-full h-screen bg-blue-300">
+      <button id="login" class="w-32 h-16 text-orange-200 bg-gray-700 hover:text-white">LOGIN</button>
+  </div>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- JQuery -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+    import { getDatabase, ref, push, set, onChildAdded, remove,onChildRemoved } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+    import {
+      getAuth,
+      signInWithPopup,
+      GoogleAuthProvider,
+      signOut,
+      onAuthStateChanged,
+            }
+  
+    from "https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js";
+    
+  </script>
+  </body>
+  </html>
